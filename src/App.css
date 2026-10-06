@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d9d9d9;
+}
+
+.App {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.Header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.Calculator {
+  width: 350px;
+  margin: auto;
+  padding: 15px;
+
+  background-color: #333;
+  border: 3px solid #222;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 10px #888;
+}
+
+.Display {
+  height: 65px;
+  margin-bottom: 12px;
+  padding: 10px;
+
+  background-color: #e8e8e8;
+  border: 2px solid #111;
+  border-radius: 5px;
+
+  font-size: 30px;
+  text-align: right;
+  line-height: 40px;
+  color: #111;
+}
+
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+}
+
+.Button {
+  height: 60px;
+
+  border: 1px solid #999;
+  border-radius: 5px;
+
+  background-color: #f2f2f2;
+  color: #222;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: #d6d6d6;
+}
+
+.Button:active {
+  background-color: #bdbdbd;
+}
+
+
+
+.Button:nth-child(4n) {
+  background-color: #bcbcbc;
+}
+
+.Button:nth-child(4n):hover {
+  background-color: #a5a5a5;
+}
+
+
+
+.Button:nth-child(13) {
+  background-color: #d9534f;
+  color: white;
+}
+
+.Button:nth-child(13):hover {
+  background-color: #c9302c;
+}
+
+
+.Button:nth-child(15) {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.Button:nth-child(15):hover {
+  background-color: #449d44;
+}
