@@ -58,7 +58,7 @@ function App() {
       setOperand1(Number(disp));
       setOperation(value);
       setOperand2(null);
-      setDisp(0);
+      setDisp(value);
       return;
     }
 
